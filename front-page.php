@@ -54,6 +54,22 @@
 			<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	
 				<div class="item" onclick="location='<?php echo get_permalink(); ?>'" style="background-image: url('<?php if ( has_post_thumbnail() ) {the_post_thumbnail_url();} ?>') ">
+					<div class="item-inf">
+						<div class="post-inf">
+							<h4><?php the_title(); ?></h4>
+							<?php the_excerpt(); ?>
+						</div>
+
+						<div class="post-btn">
+							<a href="<?php echo get_permalink(); ?>" class="btn input tcenter">View Project</a>
+
+							<div class="arrow">
+							<svg width="40" height="16" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path class="svg-arrow" d="M1 7.99988L39 7.99988M39 7.99988L31 1.00012M39 7.99988L31 14.9999" stroke="#DA291C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							</div>
+						</div>
+					</div>
 				</div>
 
 			<?php endwhile;?>

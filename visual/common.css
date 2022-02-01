@@ -143,13 +143,89 @@
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
 }
 
 #portfolio .grid .item {
-	width: 50%;
-	height: 120px;
+	aspect-ratio: 3 / 4;
+}
+
+#portfolio .grid .item:nth-child(3n) {
+	aspect-ratio: unset;
+	height: 320px;
+	width: 100%;
+	grid-column: 1/3;
+}
+
+#portfolio .grid .item .item-inf {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 30px;
+	color: var(--super-light);
+}
+
+#portfolio .grid .item:hover .item-inf {
+	background-color: var(--super-opaque);
+	color: inherit;
+}
+
+#portfolio .grid .item .item-inf .post-inf {
+	height: 100%;
+	padding: 42px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+#portfolio .grid .item:hover .item-inf .post-inf {
+	justify-content: center;
+}
+
+#portfolio .grid .item .item-inf .post-inf p {
+	display: none;
+}
+
+#portfolio .grid .item:hover .item-inf .post-inf p {
+	display: block;
+}
+
+#portfolio .grid .item .item-inf .post-btn {
+	width: 100%;
+	height: auto;
+	flex-direction: row;
+	align-items: stretch;
+	display: none;
+}
+
+#portfolio .grid .item:hover .item-inf .post-btn {
+	display: flex;
+}
+
+#portfolio .grid .item .item-inf .post-btn a.btn.input {
+	width: 100%;
+	padding: 16px 0;
+	border: none;
+	border-radius: none;
+	background-color: var(--white);
+}
+
+#portfolio .grid .item .item-inf .post-btn .arrow {
+	padding: 0 16px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--primary);
+}
+
+#portfolio .grid .item .item-inf .post-btn .arrow svg .svg-arrow {
+	stroke: var(--white);
 }

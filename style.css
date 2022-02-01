@@ -20,6 +20,8 @@ Tags: Modern, Indie, Simple, Minimalist
 	--super-light	: rgba(253,253,253,1);
 	--white			: rgba(255,255,255,1);
 
+	--super-opaque	: rgba(253,253,253,0.95);
+
 	/* Typeface **/
 	--sora			: "Sora", Sora, sans-serif;
 
@@ -126,9 +128,9 @@ p {
 	user-select: none;
 }
 
-.tcenter {text-align: center;}
-.tleft {text-align: left;}
-.tright {text-align: right;}
+.tcenter {text-align: center !important; width: 100%;}
+.tleft {text-align: left !important;}
+.tright {text-align: right !important;}
 
 /* Components **/
 /***************/
