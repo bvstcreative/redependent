@@ -13,9 +13,7 @@
 	<meta name="author" content="Brvi Studio">
 
 	<!-- General Meta -->
-	<link rel="icon" href="<?php	$custom_logo_id = get_theme_mod( 'custom_logo' );
-									$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-									echo $image[0];?>" />
+	<link rel="icon" href="<?php echo get_bloginfo('template_directory'); ?>/images/logo/logo.png" />
 	
 	<!-- Plugin JS -->
 	<script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/app/jQ/2.02.0/jquery.min.js"></script>
