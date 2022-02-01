@@ -25,8 +25,12 @@ Tags: Modern, Indie, Simple, Minimalist
 
 	--typeset 		: var(--sora);
 
-	/* Border Radius **/
+	/* Layout **/
 	--br-default	: 8px;
+	--dsktp-zr-mg	: 0;
+	--dsktp-lrg-mg	: 120px;
+
+	--side-mg		: var(--dsktp-zr-mg) var(--dsktp-lrg-mg);
 }
 
 /* General Style **/
@@ -121,6 +125,10 @@ p {
 	line-height: 30px;
 	user-select: none;
 }
+
+.tcenter {text-align: center;}
+.tleft {text-align: left;}
+.tright {text-align: right;}
 
 /* Components **/
 /***************/

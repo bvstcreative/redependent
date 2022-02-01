@@ -7,7 +7,7 @@
 	<title>Bvst Creative</title>
 
 	<!-- Google Meta -->
-	<meta name="description" content="Creative Digital Agency. Layanan kami mencakup hampir semua yang membantu perkembangan bisnis atau usaha anda.">
+	<meta name="description" content="<?php echo get_bloginfo( 'description' ); ?>">
 	<meta name="keywords" content="bvst Studio, Creative Studio, Creative Design, bvst, Graphics Designer, Logo Designer, Branding, Web Designer">
 	<meta name="robot" content="noindex, nofollow">
 	<meta name="author" content="Brvi Studio">
@@ -18,17 +18,18 @@
 									echo $image[0];?>" />
 	
 	<!-- Plugin JS -->
-	<script type="text/javascript" src="/app/jQ/2.02.0/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_bloginfo('template_directory'); ?>/app/jQ/2.02.0/jquery.min.js"></script>
 	<!-- General JS -->
 
 	<!-- General CSS -->
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="visual/general.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo get_bloginfo('template_directory'); ?>/visual/common.css" rel="stylesheet" type="text/css" />
 
 	<!-- Typeface -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link href="<?php echo get_bloginfo('template_directory'); ?>/fonts/redicon/redicon.css" rel="stylesheet" type="text/css" />
 
 	<!-- Plugin CSS -->
 

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'redicon';
+  src:  url('fonts/redicon.eot?ajkw94');
+  src:  url('fonts/redicon.eot?ajkw94#iefix') format('embedded-opentype'),
+    url('fonts/redicon.ttf?ajkw94') format('truetype'),
+    url('fonts/redicon.woff?ajkw94') format('woff'),
+    url('fonts/redicon.svg?ajkw94#redicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="redicon-"], [class*=" redicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'redicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.redicon-chevron:before {
+  content: "\e900";
+}
+.redicon-email:before {
+  content: "\e901";
+}
+.redicon-instagram:before {
+  content: "\e902";
+}
+.redicon-whatsapp:before {
+  content: "\e903";
+}

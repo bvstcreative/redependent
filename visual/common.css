@@ -1,0 +1,156 @@
+/* Main CSS **/
+/*************/
+
+#main {
+	width: 100%;
+	height: 100%;
+	min-height: 620px;
+	padding: 0;
+	overflow: auto;
+}
+
+#cover {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: var(--side-mg);
+	overflow: hidden;
+}
+
+#cover-inf {
+	width: 50%;
+	height: 100%;
+	padding: 60px 0 30px;
+	float:left;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+#menubar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#menubar .logo {
+	width: 48px;
+	height: auto;
+}
+
+.logo img {
+	width: 100%;
+	height: auto;
+}
+
+#menubar .lang-select span{
+	width: 34px;
+	padding: 5px;
+	color: var(--primary);
+	cursor: pointer;
+}
+
+#menubar .lang-select span.active {
+	color: #FFF;
+	background-color: var(--primary)
+}
+
+#notice {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	gap: 24px;
+	color: var(--primary);
+}
+
+#notice .arrow {
+	width: 38px;
+	height: 14px;
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+	transform: rotate(90deg);
+}
+
+#get-in-touch {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+}
+
+#get-in-touch .social-icon {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 15px;
+}
+
+#get-in-touch .social-icon .input {
+	font-size: 24px;
+	padding: 10px !important;
+	border-radius: 100px;
+	color: var(--dark-gray);
+	border-color: var(--dark-gray);
+}
+
+#cover-figure {
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+#cover-figure img {
+	height: 100%;
+	width: auto;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	right: -25%;
+}
+
+#portfolio {
+	width: 100%;
+	max-width: 640px;
+	margin: 60px auto;
+	color: var(--primary);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+#portfolio .grid {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+#portfolio .grid .item {
+	width: 50%;
+	height: 120px;
+}
