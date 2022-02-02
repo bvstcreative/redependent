@@ -4,15 +4,7 @@
 	<div id="cover">
 		
 		<div id="cover-inf">
-			<div id="menubar">
-				<div class="logo">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/images/logo/logo.svg" alt="Logo">
-				</div>
-				<div class="lang-select">
-					<span class="input active">EN</span>
-					<span class="input">ID</span>
-				</div>
-			</div>
+			<?php get_template_part( 'template_part/common/menubar', get_post_format() ); ?>
 			<div id="notice">
 				<h2>Our Site Is Under Maintenance</h2>
 				<h5>
