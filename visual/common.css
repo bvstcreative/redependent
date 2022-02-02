@@ -159,6 +159,9 @@
 	aspect-ratio: 3 / 4;
 	cursor: pointer;
 	user-select: none;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #portfolio .grid .item:nth-child(3n) {
