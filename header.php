@@ -36,6 +36,7 @@
 	<!-- General CSS -->
 	<link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet" type="text/css" />
 	<link href="<?php echo get_bloginfo('template_directory'); ?>/visual/common.css" rel="stylesheet" type="text/css" />
+	<link href="<?php echo get_bloginfo('template_directory'); ?>/visual/media-queries.css" rel="stylesheet" type="text/css" />
 
 	<!-- Typeface -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
