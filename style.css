@@ -43,6 +43,7 @@ Tags: Modern, Indie, Simple, Minimalist
 	--br-default	: 8px;
 	--dsktp-zr-mg	: 0;
 	--dsktp-lrg-mg	: 120px;
+	--mobile-mg		: 30px;
 
 	--side-mg		: var(--dsktp-zr-mg) var(--dsktp-lrg-mg);
 }
