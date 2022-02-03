@@ -13,15 +13,7 @@
 	<meta name="author" content="Brvi Studio">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-219193872-1">
-	</script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-219193872-1');
-	</script>
+	
 
 	<!-- Facebook Meta -->
 	<meta name="facebook-domain-verification" content="ruxd14cf6nxk8wiw75rp5klu4jsq7s" />
