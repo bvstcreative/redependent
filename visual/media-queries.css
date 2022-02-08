@@ -1,0 +1,70 @@
+@media only screen and (max-width: 640px) {
+	:root {
+		--side-mg	: var(--mobile-mg);
+	}
+
+	#cover-inf {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	#cover-figure {
+		display: none;
+	}
+
+	#get-in-touch {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	#get-in-touch .barcode {
+		display: none;
+	}
+
+	#portfolio {
+		padding: var(--side-mg);
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	#portfolio .grid {
+		grid-template-columns: 1fr;
+	}
+	
+	#portfolio .grid .item:nth-child(3n) {
+		aspect-ratio: 3/4;
+		height: auto;
+		width: unset;
+		grid-column: unset;
+	}
+
+	footer .inner-fi {
+		flex-direction: column;
+		gap: 30px;
+		justify-content: center;
+	}
+
+	footer .footer-inf .contact {
+		justify-content: center;
+	}
+
+	#content {
+		gap: 30px;
+	}
+
+	#content .header {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 30px;
+	}
+
+	#content .header .tittle {
+		width: 100%;
+	}
+
+	#content .header .client-logo,
+	#content .header .client-logo img {
+		max-height: 92px;
+	}
+}
